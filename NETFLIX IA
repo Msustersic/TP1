@@ -24,14 +24,7 @@
                 <img :src="instructorImg" class="img-display border">
                 <p>TUTOR/A : {{ tutor.toUpperCase() }}</p>
             </div>
-            <div class="item" v-for="link in linkers">
-                <h2>{{link.title}}</h2>
-                <a target="_blank" v-bind:href="link.link_uri">
-                    <img :src="link.img_path" :alt="link.title" class="img-display">
-                </a>
-                <p>
-                    {{ link.texto }}
-                </p>
+           
 
             </div>
             
