@@ -1,19 +1,26 @@
 body, html {
   margin: 0;
   padding: 0;
-  height: 100%;
 }
 
-.container {
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-size: cover;
-  background-position: center;
-  text-align: center;
-  color: white;
+
+.container{
+  background-color: black;
 }
+
+.sub-container {
+  /*background-color: rgba(255, 255, 255, 0.5);  /*Fondo semitransparente para los sub-contenedores*/ 
+  text-align: center; /*Alinea el texto de los sub-containers*/
+  width: 30%; /*Porcentaje de ancho*/
+  height: 35%; /*Porcentaje de alto*/
+  flex-grow: 1;
+  padding: 10px; /*Establece el borde de los sub-containers*/
+  margin: 20px; /*Establece el borde de los sub-containers*/
+  border-radius: 10px; /*Le da una forma redonda al cuadrado del sub-container*/
+  /*bottom: 20%;*/
+}
+
+
 p{
   color: white;
 }
@@ -22,19 +29,14 @@ p{
   color: white; /*Cambia el color*/
   font-family: Verdana; /*cambia el tipo de letra*/
   font-weight: 20;/*cambia el grosor de la letra*/
-  color: white;
   text-align: center;
   font-size: 50px;
 }
 
 #container1 {
   background-image: url(https://images.unsplash.com/photo-1644268394651-e0b165a072a8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80);
-}
-
-
-#container3 {
-  background-color: white;
-  ;
+  width: 100vw;/*Ocupa el 100% del ancho de la pantalla*/
+  height: 100vh; /*Ocupa el total del alto de la pantalla*/
 }
 
 #container2 {
@@ -42,65 +44,30 @@ p{
   display: flex; /* Convertir el contenedor principal en un contenedor flexible */
   justify-content: space-around; /* Espacio igual entre sub-contenedores */
   align-items: center; /* Centrar verticalmente los sub-contenedores */
+  width: 100vw;/*Ocupa el 100% del ancho de la pantalla*/
+  height: 100vh; /*Ocupa el total del alto de la pantalla*/
+  flex-direction: row;/*Establece que el orden es en horizontal*/
+  flex-wrap: wrap; /*Permite meter items y crear multilineas*/
+  justify-content: space-evenly; /*Separa a los sub-containers en spacios iguales*/
+  align-content: space-between;/*Distribuye los items desde el principio hasta el final*/
 }
 
-.sub-container {
-  background-color: rgba(255, 255, 255, 0.5); /* Fondo semitransparente para los sub-contenedores */
-  margin: 20px; /* Espacio entre los sub-contenedores */
-  padding: 10px;
-  text-align: center;
-  flex: 1; /* Distribuir espacio de manera igual entre los sub-contenedores */
+#container3 {
+  background-color: blue;
+  width: 100vw;/*Ocupa el 100% del ancho de la pantalla*/
+  height: 100vh; /*Ocupa el total del alto de la pantalla*/
 }
 
-.sub-container-inner {
-  background-color: rgba(0, 0, 0, 0.7); /* Fondo semitransparente para el contenido dentro de los sub-contenedores */
-  padding: 10px;
-  border-radius: 10px;
+
+.sub-container img { /*Imagen del contenedor*/
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
 }
 
-.sub-container img {
-  max-width: 100%;
-  height: auto;
-}
-
-.sub-container h2 {
+.sub-container h2 { /*Titulo del contenedor*/
   color: white;
-  font-size: 24px;
-  margin-top: 10px;
-}
-
-
-.sub-container img {
-  width: 200px; /* Establece el ancho deseado, por ejemplo, 200 píxeles */
-  height: 200px; /* Mantén la proporción original de la imagen ajustando solo el ancho */
-}
-
-
-/* Agrega un estilo predeterminado para la descripción */
-/* Establece el estilo predeterminado para la descripción */
-.sub-container {
-  position: relative;
-  overflow: hidden; /* Para ocultar la descripción inicialmente */
-}
-
-.sub-container .description {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: rgba(0, 0, 0, 0.7);
-  color: white;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  opacity: 0;
-  transition: opacity 0.3s ease;
-}
-
-/* Cuando el mouse pasa sobre el sub-contenedor, muestra la descripción */
-.sub-container:hover .description {
-  opacity: 1;
+  font-size: 25px;
+  margin-top: 0px;
 }
 
