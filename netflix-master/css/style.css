@@ -20,7 +20,7 @@ header{
 .sub-container {
   text-align: center; /*Alinea el texto de los sub-containers*/
   width: 30%; /*Porcentaje de ancho*/
-  height: 15%; /*Porcentaje de alto*/
+  height: 7%; /*Porcentaje de alto*/
   flex-grow: 1;
   padding: 10px; /*Establece el borde de los sub-containers*/
   margin: 20px; /*Establece el borde de los sub-containers*/
@@ -54,7 +54,7 @@ p{
 #container2 {
   background-color: black;
   width: 100vw;/*Ocupa el 100% del ancho de la pantalla*/
-  height: 200vh; /*Ocupa el total del alto de la pantalla*/
+  height: 300vh; /*Ocupa el total del alto de la pantalla*/
   display: flex; /* Convertir el contenedor principal en un contenedor flexible */
   justify-content: space-around; /* Espacio igual entre sub-contenedores */
   align-items: center; /* Centrar verticalmente los sub-contenedores */
@@ -65,7 +65,8 @@ p{
 }
 
 #container3 {
-  background-color: blue;
+
+  color: white;
   width: 100vw;/*Ocupa el 100% del ancho de la pantalla*/
   height: 100vh; /*Ocupa el total del alto de la pantalla*/
 }
