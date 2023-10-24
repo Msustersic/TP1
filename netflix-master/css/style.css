@@ -74,6 +74,19 @@ b{
   text-align: center;
   font-size: 50px;
 }
+#ventana{
+  margin: auto; /*intento de centrar la ventana de comentarios */
+  width: 90%;
+  height: 500px;
+  border: 2px solid white;
+  overflow:auto;
+  color: white; /*Cambia el color*/
+  font-family: Verdana; /*cambia el tipo de letra*/
+  font-weight: 20;/*cambia el grosor de la letra*/
+  text-align: left;
+  font-size: 25px;
+}
+
 
 #container1 {
   background-color: black;
