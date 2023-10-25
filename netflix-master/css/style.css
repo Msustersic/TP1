@@ -1,8 +1,22 @@
-body, html {
-  background-color: black;
-  margin: 0;
-  padding: 0;
+body::before {
+  content: "";
+  background-image: url("../img/descarga.jpg");
+  opacity: 0.6;
+  position: fixed;
+  background-repeat: no-repeat;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
 }
+
+body {
+  color: white;
+  background: black;
+  background-size: cover;
+}
+
 
 header{
   text-align: center;
@@ -89,7 +103,7 @@ b{
 
 
 #container1 {
-  background-color: black;
+
   width: 100vw;/*Ocupa el 100% del ancho de la pantalla*/
   height: 100vh; /*Ocupa el total del alto de la pantalla*/
   justify-content: center;  /*Centrar horizontalmente */
@@ -98,7 +112,6 @@ b{
 }
 
 #container2 {
-  background-color: black;
   width: 100vw;/*Ocupa el 100% del ancho de la pantalla*/
   height: 300vh; /*Ocupa el total del alto de la pantalla*/
   display: flex; /* Convertir el contenedor principal en un contenedor flexible */
@@ -119,7 +132,7 @@ b{
 }
 
 #container4 {
-  background-color: black;
+
   width: 100vw;/*Ocupa el 100% del ancho de la pantalla*/
   height: 100vh; /*Ocupa el total del alto de la pantalla*/
   display: flex; /* Convertir el contenedor principal en un contenedor flexible */
@@ -206,7 +219,7 @@ b{
   padding: 0;
 }
 .contenedor {
-  background-color: black;
+
   display: flex; /* Establece el contenedor como un contenedor flexible */
   justify-content: space-between; /* Alinea los elementos hijos horizontalmente */
   flex-direction: row;/*Establece que el orden es en horizontal*/
