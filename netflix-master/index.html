@@ -1,62 +1,58 @@
 <!DOCTYPE html>
-<html lang="Es">
+<html lang="es">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Listado de Inteligencias</title>
-  <link rel="stylesheet" href="/netflix-master/css/style.css">
-  <script src="js/main.js"></script>
+  <link rel="stylesheet" href="Style.css">
+  <script src="Main.js"></script>
 </head>
 <body>
 
   <header>
-    <div class="container" id="container1">
-      <h1 id="Titulo">Todas las IAs en un solo lugar</h1>
-      <div>
-        <br><br><br>
-        <a class="Boton" href="Funcion.html" target="_blank">Divididas por Función</a>
-      </div>
-  
-
-
-
-      <div>
-        <br><br><br>
-        <form id="Buscador" onsubmit=" buscar_IA(); return false;">
-          <input type="text" id="search-input" placeholder="Buscar Inteligencia">
-          <input type="submit" value="Buscar">
-        </form>
-      </div>
-      <div>
-        <br><br>
-        <br><br>
-      </div>
-      
-
-      
-        <div id="resultado">
-          <div id="imagenContainer">
-              <img id="imagen" class="imagen_resultado" src="" >
-          </div>
-        </div> 
-
-        <div>
-          <br><br>
-        </div>
-
-          <div id="textoContainer" >
-              <p id="texto"></p>
-          </div>
-        
-
-     
-
-
+    <h1 id="Titulo">Todas las IAs en un solo lugar</h1>
   </header>
 
   <main>
 
+    <br><br><br><br>
+
+    <div class="container" id="container1">
+
+      <div class="Botones">
+        <a class="Boton1" href="Funcion.html" target="_blank">Divididas por Función</a>
+        <a class="Boton1" href="Contacto.html" target="_blank">Dejar un Comentario</a>
+      </div>
+    
+  
+      <div>
+        <br><br><br><br><br><br>
+        <nav>
+          <form id="Buscador" onsubmit=" buscar_IA(); return false;">
+            <input type="text" id="search-input" placeholder="Buscar Inteligencia">
+            <input type="submit" value="Buscar">
+          </form>
+        </nav>
+      </div>
+        <br><br><br><br>
+
+        
+  
+        <div id="resultado">
+          <div id="textoContainer">
+              <b>URL Pagina Buscada:</b>
+              <a id="enlaceIA" href="" target="_blank"></a>
+          </div>
+        </div>
+  
+
+
+    </div>
+     
+
     <div class="container" id="container2">
+      
+      <img class="Fondo1" src="https://s2.best-wallpaper.net/wallpaper/1920x1080/2002/Blue-and-purple-abstract-background_1920x1080.jpg">
 
         <div class="sub-container">
             <img src="https://www.ymca.int/wp-content/uploads/2023/08/chatGPT-768x479.jpg" alt="Chat GPT-4">
@@ -107,6 +103,7 @@
           <img src="https://f-droid.org/repo/com.example.deeplviewer/en-US/icon_yPWzACzWbgjTgxaaKagInwao_H8qw-bH97XMJDGbCh8=.png" alt="Depp L">
           <h2><a href="https://www.deepl.com/es/translator" target="_blank">Depp L</a></h2>
         </div>
+
 
         <div class="sub-container">
           <img src="https://www.evolucioni3.com/zia-logo.png" alt="Zoho Zia">
@@ -195,23 +192,31 @@
 
     </div>
 
-   
-    <div id="Titulo">
-      <Br>COMENTARIOS:
-      <a href="/netflix-master/contacto.html">
-        <button style="cursor:pointer;" id="iniciarSesionButton">insertar comentario</button>
-      </a>
-      </div>
+    <div class="container" id="container3">
+      <hr>
+      <h1>Comentarios :</h1>
       <div id="ventana">
-      <div id="api"></div>
-      <script src="js/comentarios fetch.js"type="module"></script>
-    </div>
-  </div>
+        <div id="api"></div>
+        <script src="Comentarios.js"type="module"></script>
+      </div>
+      <br><br><br>
+      <hr>
+    </div> 
+
   </main>
 
-
   <footer>
-
+    <h2>Enlaces de paginas con inteligencias mas usadas</h2>
+    <br><br><br>
+    <b>URL: </b>
+    <a href="https://www.xataka.com/basics/mega-guia-71-herramientas-inteligencia-artificial-dime-necesitas-te-digo-que-ias-mejores">Lista de 71 Ias</a>
+    <br><br>
+    <iframe src="https://www.xataka.com/basics/mega-guia-71-herramientas-inteligencia-artificial-dime-necesitas-te-digo-que-ias-mejores"
+            width="1800" 
+            height="170" 
+            frameborder="1">
+    </iframe>
   </footer>
+
 </body>
 </html>
