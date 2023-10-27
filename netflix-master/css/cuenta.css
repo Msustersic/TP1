@@ -82,36 +82,7 @@ textarea:focus, input:focus {
     border-radius: 5px;
 }
 
-.caja .checkbox{
-    display: flex;
-    align-items: center;
-    color: #b3b3b3;
-    font-size: 14px;
-    justify-content: space-between;
-    margin: 10px 0px;
-    margin-bottom: 50px;
-}
 
-
-#checkbox1 {
-    accent-color: #b3b3b3;
-}
-
-.caja .checkbox div p {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 14px;
-}
-
-.caja .checkbox div p:hover {
-    text-decoration: underline;
-}
-
-.caja .subscripcion p{
-    margin: 15px 0px 0 0px;
-    color: gray;
-}
 
 
 
