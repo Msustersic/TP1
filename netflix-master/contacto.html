@@ -1,30 +1,55 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">  
-  <link rel="stylesheet" href="/netflix-master/css/cuenta.css">
-    <title>FORMULARIO DE CONTACTO</title>
-    <script src="/netflix-master/js/formulario.js"></script>
+  <link rel="stylesheet" href="Contacto.css">
+  <title>FORMULARIO DE CONTACTO</title>
 </head>
 <body>
-  <div class="contenido">
-    <nav>
-      <a href="/netflix-master/pagina base.html">
-        <img class="logo" src="./img/logo.png" alt="ialogo" />
-      </a>
-    </nav>
+  <div class="contenido centrado-vertical">
     <div class="caja">
-        <h2><centar>FORMULARIO DE CONTACTO</centar></h2>
-        <div class="form">
-          <input type="text" id="name" placeholder="Nombre" required />
-          <input type="text" id="correo" placeholder="Correo electrónico" required />
-          <input type="text" id="mensaje" placeholder="Mensaje" required />
-        </div>
-        <button style="cursor:pointer;" id="enviarMensaje">Enviar mensaje</button>
+      <h2>FORMULARIO DE CONTACTO</h2>
+      <div class="form">
+        <input type="text" id="name" placeholder="Nombre" required />
+        <input type="email" id="correo" placeholder="Correo electrónico" required />
+        <input type="text" id="mensaje" placeholder="Mensaje" required />
       </div>
-  </div>
+      <button style="cursor:pointer;" id="enviarMensaje">Enviar mensaje</button>
+    </div>
+    
+    <script>
+      document.getElementById("enviarMensaje").addEventListener("click", function() {
+        var nombre = document.getElementById("name").value;
+        var correo = document.getElementById("correo").value;
+        var mensaje = document.getElementById("mensaje").value;
+    
+        var formData = new FormData();
+        formData.append("Nombre", nombre);
+        formData.append("Mail", correo);
+        formData.append("Comentario", mensaje);
+    
+        var url = "https://sheetdb.io/api/v1/p6vytybspledu"; // Reemplaza con la URL correcta de SheetDB
+    
+        var xhr = new XMLHttpRequest();
+        xhr.open("POST", url, true);
+    
+        xhr.onreadystatechange = function() {
+          if (xhr.readyState === 4) {
+            if (xhr.status === 201) {
+              document.getElementById("name").value = '';
+              document.getElementById("correo").value = '';
+              document.getElementById("mensaje").value = '';
+              alert("Mensaje enviado");
+              window.location.href = 'Index.html';
+            } else {
+              console.error("Error al enviar datos: " + xhr.status);
+            }
+          }
+        };
+    
+        xhr.send(formData);
+      });
+    </script>
 </body>
-
-
 </html>
