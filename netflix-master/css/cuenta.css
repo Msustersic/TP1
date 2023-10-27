@@ -92,13 +92,6 @@ textarea:focus, input:focus {
     margin-bottom: 50px;
 }
 
-.recordar{
-    display: inline-flex;
-}
-
-.recordar label{
-    margin-left: 3px;
-}
 
 #checkbox1 {
     accent-color: #b3b3b3;
@@ -120,24 +113,6 @@ textarea:focus, input:focus {
     color: gray;
 }
 
-.caja .subscripcion p span{
-    color: white;
-    font-weight: 600;
-}
-
-.caja .subscripcion p+p{
-    font-size: 13px;
-}
-
-.caja .subscripcion a{
-    color: #0071eb;
-    font-weight: normal;
-    text-decoration: none;
-}
-
-.caja .subscripcion a:hover{
-    text-decoration: underline;
-}
 
 
 @media only screen and (max-width:600px) {
@@ -169,14 +144,5 @@ textarea:focus, input:focus {
 
     .caja button {
         padding: 15px 37%;
-    }
-
-    
-    .caja .subscripcion{
-        margin-top: -20px;
-    }
-    
-    .caja .subscripcion p span {
-        font-weight: 300;        
     }
 }
