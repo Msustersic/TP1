@@ -1,2 +1,11 @@
-# ignorar las carpetas a continuacion:
-auxiliar/*
+# Utilidades propias
+auxilar/*	
+# Git
+.gitignore	
+# Visual Studio Code
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+.history/*

@@ -28,7 +28,9 @@
 	y diseño 'responsive layout' combinando flexbox y grid.
 	Incluímos todos los temas vistos durante la cursada, como animaciones,
 	iframes, etc.
-	La animación está implementada en ......................
+	La animación está implementada en el 'nav' del header, para alternar la 
+	visualización del menú en el layout 'mobile' con cada evento 'click' sobre 
+	el 'btnMenuPri'.
 ***
    En la siguiente etapa, se transformará en un front-end dinámico, utilizando
 	la API JSONPlaceholder y contendrá un componente de login
