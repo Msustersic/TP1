@@ -1,34 +1,22 @@
-export function commentsToRender(data) {
+/* function obtenerDatos(data) {
    let item;
    let items = "";
 
    if (!data) {
-      console.log("la lista de comentarios recibidos se encuentra vacía");
+      console.log("la lista de ... se encuentra vacía");
       return;
    }
 
    data.forEach((item) => {
-      let pattern = `
-         <li>
-            <article>
-               <p>${item.Nombre}</p>
-               <p>${item.Comentario}</p>
-            </article>
-         </li>`;
-      items += pattern;
-   });
-
-   return items;
-}
-
-/* function ordenerIAsByFunction(data) {
-
+      // template html
+   })
 } */
 
+import { iaType } from "./constantes";
+
 export function obtenerIAsList(data) {
-   let item;
    let items = "";
-   
+
    if (!data) {
       console.log("la lista de IAs se encuentra vacía");
       return;
@@ -45,38 +33,45 @@ export function obtenerIAsList(data) {
    return items;
 }
 
+export function obtenerIAsByType(data) {
 
-/* 
-export function obtenerIAsBytype(data, tipo) {
-   let item;
-   let items = "";
-   
+   let itemsByType = "";
+   const iaTypeEndPattern =`
+         </ul>
+      </section>`;
+
    if (!data) {
-      log("la lista de IAs se encuentra vacía");
+      console.log("la lista de IAs se encuentra vacía");
       return;
    }
 
-   for (let i = 0; i <= iasType.length - 1; i++) {
-      byFunctionPattern = `
+   for (let i=0;i<iaType.length;i++){
+      let idx = i +1;
+      iaTypeStartPattern = `
          <section class="byFunction">
             <header>
-               <h2>${iasType[i].}</h2>
-               <img src="${iasType[i].image}" width="50">
+               <h2>${iaType[i].nombre}</h2>
+               <img src="${iaType[i].image}" width="50">
             </header>
-            <ul id="iaArteCreatividadList">
-
-            </ul>`;
+            <ul id="iaList">`;
+      itemsByType += iaTypeStartPattern
+      data.forEach((item) => {
+         for (let j=0;j<=item.iaTypeID[j].length;j++){
+            if (item.iaTypeID[j] == idx){
+               let itemPattern = `
+                  < li >
+                     <a href="${item.link}" target="_blank">
+                     <img src="${item.image}" title="${item.nombre} alt=" ${item.nombre} site">
+                  </li>`;
+            }
+            itemsByType += itemPattern;
+         }
+      });
+      itemsByType += iaTypeEndPattern;
    }
-
-
-   data.forEach((item) => {
-
-      let itemPattern = `
-         <li>
-         <a href="${item.link}" target="_blank">
-         <img src="${item.image}" title= "${item.nombre} alt="${item.nombre} site">
-         </li>`;
-
+   return itemsByType;
+};
+/* 
       items += pattern;
 
       if (byFunction) {
@@ -111,5 +106,31 @@ export function obtenerIAsBytype(data, tipo) {
 
 
    return items;
+} */
+
+export function commentsToRender(data) {
+   let item;
+   let items = "";
+
+   if (!data) {
+      console.log("la lista de comentarios recibidos se encuentra vacía");
+      return;
+   }
+
+   data.forEach((item) => {
+      let pattern = `
+         < li >
+         <article>
+            <p>${item.Nombre}</p>
+            <p>${item.Comentario}</p>
+         </article>
+         </li > `;
+      items += pattern;
+   });
+
+   return items;
 }
- */
+
+
+
+

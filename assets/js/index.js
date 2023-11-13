@@ -1,7 +1,7 @@
 
-import { API_URI, IAs_URI } from "./constantes.js";
+import { APIcomments_URI, IAs_URI, IAsType_URI } from "./constantes.js";
 import { Render } from "./render.js";
-import { commentsToRender, obtenerIAsList } from "./functions.js";
+import { commentsToRender, obtenerIAsByType, obtenerIAsList } from "./functions.js";
 
 /* manejo del menu responsive */
 let btnMenuPri = document.querySelector('#btnMenuPri');
@@ -13,12 +13,10 @@ btnMenuPri.addEventListener('click', () => {
 
 
 /* Obtención y renderizado de datos */
-const comments = new Render("dataList");
 const ias = new Render("iaList");
-const iasByFunction = new Render("iaListByFunction");
-
-comments.fetchData(API_URI, commentsToRender);
+const comments = new Render("dataList");
+const iasByFunction = new Render("iaByFunctionList");
 
 ias.fetchData(IAs_URI, obtenerIAsList);
-
-iasByFunction.fetchData(IAs_URI, obtenerIAsList);
+comments.fetchData(APIcomments_URI, commentsToRender);
+iasByFunction.fetchData(IAsType_URI, obtenerIAsByType);
