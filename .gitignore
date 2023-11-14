@@ -1,7 +1,7 @@
 # Utilidades propias
-auxiliar/*	
+auxiliar/
 # Git
-# .gitignore	
+.gitignore	
 # Visual Studio Code
 .vscode/*
 !.vscode/settings.json

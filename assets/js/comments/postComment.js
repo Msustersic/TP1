@@ -44,7 +44,7 @@ export function sendComment(data) {
    fetch(API_URI, {
       method: 'POST',
       headers: {
-         // Authorization: `Bearer ${TOKEN}`,
+         'Authorization': `Bearer ${TOKEN}`,
          'Content-Type': 'application/json'
       },
       body: JSON.stringify(datos)
@@ -67,6 +67,3 @@ export function sendComment(data) {
       // window.location.href = './index.html';
 }
 
-export function cancelar(){
-
-}
