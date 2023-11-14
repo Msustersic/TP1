@@ -54,6 +54,7 @@ export function obtenerIAsByType(data) {
          }
       });
       itemsByType += iaTypeEndPattern;
+      console.log(`pattern actual: ${itemsByType}`)
    }
    return itemsByType;
 };
