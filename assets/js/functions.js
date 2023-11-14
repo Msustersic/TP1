@@ -12,7 +12,7 @@ export function obtenerIAsList(data) {
       let itemPattern = `
          <li>
          <a href="${item.link}" target="_blank">
-         <img src="${item.image}" title= "${item.nombre} alt="${item.nombre} site">
+         <img src="${item.image}" title= "${item.nombre}" alt="${item.nombre} site">
          </li>`;
       items += itemPattern;
    });
