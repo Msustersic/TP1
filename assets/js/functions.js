@@ -1,18 +1,4 @@
-/* function obtenerDatos(data) {
-   let item;
-   let items = "";
-
-   if (!data) {
-      console.log("la lista de ... se encuentra vacía");
-      return;
-   }
-
-   data.forEach((item) => {
-      // template html
-   })
-} */
-
-import { iaType } from "./constantes";
+import { iaType } from "./constantes.js";
 
 export function obtenerIAsList(data) {
    let items = "";
@@ -31,7 +17,7 @@ export function obtenerIAsList(data) {
       items += itemPattern;
    });
    return items;
-}
+};
 
 export function obtenerIAsByType(data) {
 
@@ -71,42 +57,6 @@ export function obtenerIAsByType(data) {
    }
    return itemsByType;
 };
-/* 
-      items += pattern;
-
-      if (byFunction) {
-         switch (item.tipo) {
-            case "Arte & Creatividad":
-               arteCreatividadPattern += itemPattern;
-               break;
-            case "Conversacional":
-               conversacionalPattern += itemPattern;
-               break;
-            case "Disenio":
-               disenioPattern += itemPattern;
-               break;
-            case "Educacion":
-               educacionPattern += itemPattern;
-               break;
-            case "Programacion":
-               programacionPattern += itemPattern;
-               break;
-            case "Automatismo":
-               automatismoPattern += itemPattern;
-               break;
-            case "TextoTraduccion":
-               textoTraduccionPattern += itemPattern;
-               break;
-            default:
-               console.log(`Funcionalidad "${item.tipo}" no errónea o no cataloga`);
-               break;
-         }
-      }
-   });
-
-
-   return items;
-} */
 
 export function commentsToRender(data) {
    let item;
@@ -119,18 +69,14 @@ export function commentsToRender(data) {
 
    data.forEach((item) => {
       let pattern = `
-         < li >
+         <li>
          <article>
             <p>${item.Nombre}</p>
             <p>${item.Comentario}</p>
          </article>
-         </li > `;
+         </li> `;
       items += pattern;
    });
 
    return items;
-}
-
-
-
-
+};

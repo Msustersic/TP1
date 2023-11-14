@@ -1,5 +1,3 @@
-const { log } = console;
-
 export class Render {
    constructor(containerID) {
       this.container = document.getElementById(containerID);
@@ -11,7 +9,7 @@ export class Render {
          .then((res) => res.json()) /* respuesta obtenida la convierto en json */
          .then((data) => { /* Luego, a la data recibida transformada en json, le aplico la función de colback para procesarla */
             if (!cb) { /* si no hay función de callback, registro la data por consola y devuelvo 'null' */
-               log(data);
+               console.log(data);
                return null;
             }
 
@@ -19,7 +17,7 @@ export class Render {
             this.#renderInContainer(itemsRenderizar); /* método interno al que le paso los items a renderizar */
             return;
          })
-         .catch((error) => log({ error }));
+         .catch((error) => console.log({ error }));
    }
    #renderInContainer(items) { /* creamos el método interno con parámetro 'items a renderizar' */
       this.container.innerHTML = items; /* le pasamos al contenedor declarado los items como innerHTML */
