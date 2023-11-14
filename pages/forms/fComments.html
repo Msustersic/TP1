@@ -40,17 +40,17 @@
       <fieldset>
         <legend>Tus comentarios son bienvenidos!</legend>
         <label for="inputContactNameID">Nombre de contacto</label>
-        <input type="text" name="contactName" id="inputContactNameID" size="25" minlength="3" maxlength="30" pattern="/\d+$/g"
-          placeholder="Ingrese su nombre de usuario" required />
+        <input type="text" name="contactName" id="inputContactNameID" size="25" minlength="3" maxlength="30" 
+        pattern="[A-Za-z]{3,25}" placeholder="Ingrese su nombre de usuario" required />
         <p></p>
 
         <label for="emailContactID">Email de contacto</label>
         <input type="email" name="emailContact" id="emailContactID" size="50" minlength="8" maxlength="50"
-          pattern="/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/g" placeholder="Ingrese su cuenta de email" />
+          pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}" placeholder="Ingrese su cuenta de email" />
         <p></p>
 
         <label for="commentsContactID">Dejanos tus comentarios:</label>
-        <textarea cols="30" rows="7" name="commentsContactID" id="commentsContactID"></textarea>
+        <textarea cols="30" rows="7" name="commentsContactID" id="commentsContactID" pattern="[a-zA-Z0-9._%+-]{2,254}" ></textarea>
       </fieldset>
 
       <button id="btnEnviar" name="btnEnviar" type="submit">Enviar</button>
@@ -107,7 +107,8 @@
     <img src="../../assets/media/images/logo_tecno.png" alt="Logo de CSS-3" style="width: 50px;height: 33.5px;">
   </footer>
 
-  <script src="../../assets/js/index.js" type="module"></script>
+  <script src="../../assets/js/comments/idxFComment.js"></script>
+  <script src="../../assets/js/index.js"></script>
 </body>
 
 </html>
