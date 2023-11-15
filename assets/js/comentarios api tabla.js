@@ -5,6 +5,6 @@ const HTMLResponse = document.querySelector("#api")
 fetch(`${API_URL}/p6vytybspledu`)
     .then(response => response.json())
     .then(users =>    {
-    const tpl = users.map (user => `<li>${user.Nombre}: ${user.Comentario}</li>`);
-    HTMLResponse.innerHTML = `<ul>${tpl}</ul>`;
+    const tpl = users.map (user => `<tr class="article"><td>${user.Nombre}</td><td>${user.Comentario}</td></tr>`);
+    HTMLResponse.innerHTML = `<table><ul>${tpl}</ul></table>`;
 });
