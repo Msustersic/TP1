@@ -3,13 +3,6 @@ const APIcomments_URL = "https://sheetdb.io/api/v1";
 const APIcomments_URN = "p6vytybspledu";
 export const APIcomments_URI = `${APIcomments_URL}/${APIcomments_URN}`;
 
-const APImrl_URL = "https://sheetdb.io/api/v1/";
-const APImrl_URN = "5rjx8rw4ysznr";
-export const APImrl_URI = `${APImrl_URL}${APImrl_URN}`;
-export const TOKEN_APImrl = "x5cyqde43ofnt76sm6kzghqyfsvew3ldwg9pmhgx";
-
-const LOCAL_URL = "http://192.168.0.150:8081"
-
 export const IAs_URI = "./assets/JSON/ias.json";
 export const IAsType_URI = "../assets/JSON/iasType.json";
 
