@@ -2,7 +2,7 @@
 const APIcomments_URL = "https://sheetdb.io/api/v1";
 const APIcomments_URN = "p6vytybspledu";
 export const APIcomments_URI = `${APIcomments_URL}/${APIcomments_URN}`;
-export const TOKEN_APIcomments = '';
+export const TOKEN_APIcomments = 'rhsihhd4xhdlh997npxcrd5pflq98e1yaah9wher';
 
 export const IAs_URI = "./assets/JSON/ias.json";
 export const IAsType_URI = "../assets/JSON/iasType.json";
