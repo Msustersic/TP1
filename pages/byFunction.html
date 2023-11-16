@@ -9,7 +9,7 @@
   <meta name="keywords" content="">
   <meta name="description" content="Front-End del trabajo práctico del curso Full-Stack Python 2023 2C - Codo a Codo">
   <meta name="author" content="Valentín, Matías, Julián, Mario">
-
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
   <link rel="stylesheet" href="../assets/css/styles.css" />
 </head>
 
@@ -39,6 +39,40 @@
     <sectionid="iaByFunctionList">
       
     </section>
+ 
+    <div id="infoArchivo1"></div>
+
+
+
+    <script>
+        // carga el json
+        fetch('/assets/JSON/ias.json')
+            .then(response => response.json())
+            .then(data => {
+                // muestra la info de las IAs
+                mostrarInformacion(data, 'infoArchivo1');
+            })
+
+        // funcion para mostrar la info
+        function mostrarInformacion(data, contenedorID) {
+            const contenedor = document.getElementById(contenedorID);
+
+            if (data.length > 0) {
+                // el codigo html para mostrarnos la info
+                const infoHTML = data.map(ia => `
+                    <div>
+                        <h3><a href="${ia.link}" target="_blank"></a></h3>
+                        <a href="${ia.link}" target="_blank"><img src="${ia.image}"></a>
+                    </div>
+                `).join('');
+
+                // muestra la info
+                contenedor.innerHTML = infoHTML;
+            } else {
+                contenedor.innerText = "La lista de IAs esta vacia.";
+            }
+        }
+    </script>
      <!-- <section class="byFunction">
       <header>
         <h2>Arte & Creatividad</h2>
