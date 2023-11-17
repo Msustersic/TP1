@@ -22,7 +22,7 @@ btnEnviar.addEventListener('click', async () => {
             document.getElementById("contactEmail").value = '';
             document.getElementById("contactComment").value = '';
             alert("Gracias por sus comentarios");
-            // window.location.href = './index.html';
+            window.location.href = 'https://msustersic.github.io/TP1/pages/comments.html'; //tubimos que usar una referencia absoluta xq el codigo de js se abre desde distintos lugares;
          } else {
             console.error("Error al enviar comentarios: " + comm_request.status);
          }
