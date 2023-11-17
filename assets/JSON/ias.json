@@ -3,119 +3,119 @@
       "id": 1,
       "nombre": "Chat GPT-4",
       "link": "https://openai.com/gpt-4",
-      "image": "./assets/media/images/chatGPT.jpg",
+      "image": "./assets/media/images/chatGPT_130x100.png",
       "iasTypeID": [2,5]
    },
    {
       "id": 2,
       "nombre": "Scenario",
       "link": "https://www.scenario.com/",
-      "image": "./assets/media/images/scenario.jpg",
+      "image": "./assets/media/images/scenario_130x100.png",
       "iasTypeID": [1]
    },
    {
       "id": 3,
       "nombre": "Magic Summaries by Sybill",
       "link": "https://www.sybill.ai/magic-summary",
-      "image": "./assets/media/images/sybill.jpg",
+      "image": "./assets/media/images/sybill_130x100.png",
       "iasTypeID": [5]
    },   
    {
       "id": 4,
       "nombre": "Copy Ai",
       "link": "https://www.copy.ai/?via=bryan-koch&gclid=CjwKCAjw6p-oBhAYEiwAgg2PglM3C4qukuNJzCK2gYMbpjJfMgiFEN0DsaTI5_hdsgLRV5ZXaz-fABoCtgoQAvD_BwE",
-      "image": "./assets/media/images/copyai.jpg",
+      "image": "./assets/media/images/copyai_130x100.png",
       "iasTypeID": [5]
    },
    {
       "id": 5,
       "nombre": "Debuild",
       "link": "https://debuild.app/",
-      "image": "./assets/media/images/debuild.png",
+      "image": "./assets/media/images/debuild_130x100.png",
       "iasTypeID": [2]
    },
    {
       "id": 6,
       "nombre": "Lumen 5",
       "link": "https://lumen5.com/",
-      "image": "./assets/media/images/lumen5.webp",
+      "image": "./assets/media/images/lumen5_130x100.png",
       "iasTypeID": [6]
    },
    {
       "id": 7,
       "nombre": "Sinthesia",
       "link": "https://www.synthesia.io/",
-      "image": "./assets/media/images/synthesia.jpg",
+      "image": "./assets/media/images/synthesia_130x100.png",
       "iasTypeID": [1]
    },
    {
       "id": 8,
       "nombre": "Grammarly",
       "link": "https://www.grammarly.com/grammar-check",
-      "image": "./assets/media/images/grammarly.webp",
+      "image": "./assets/media/images/grammarly_130x100.png",
       "iasTypeID": [7]
    },
    {
       "id": 9,
       "nombre": "GPTZero",
       "link": "https://gptzero.me/",
-      "image": "./assets/media/images/gptzero.svg",
+      "image": "./assets/media/images/gptzero_130x100.png",
       "iasTypeID": [4]
    },
    {
       "id": 10,
       "nombre": "Deep L",
       "link": "https://www.deepl.com/es/translator",
-      "image": "./assets/media/images/deepl.png",
+      "image": "./assets/media/images/deepl_130x100.png",
       "iasTypeID": [7]
    },
    {
       "id": 11,
       "nombre": "Zoho Zia",
       "link": "https://www.zoho.com/es-xl/zia/",
-      "image": "./assets/media/images/zohozia.png",
+      "image": "./assets/media/images/zohozia_130x100.png",
       "iasTypeID": [1]
    },
    {
       "id": 12,
       "nombre": "Reply",
       "link": "https://replylatam.com/",
-      "image": "./assets/media/images/reply.jpg",
+      "image": "./assets/media/images/reply_130x100.png",
       "iasTypeID": [6]
    },
    {
       "id": 13,
       "nombre": "Dall-E",
       "link": "https://openai.com/dall-e-2",
-      "image": "./assets/media/images/dall-e.webp",
+      "image": "./assets/media/images/dall-e_130x100.png",
       "iasTypeID": [1]
    },
    {
       "id": 14,
       "nombre": "InWorld",
       "link": "https://inworld.ai/",
-      "image": "./assets/media/images/inworld.jpeg",
+      "image": "./assets/media/images/inworld_130x100.png",
       "iasTypeID": [1]
    },
    {
       "id": 15,
       "nombre": "Character Ai",
       "link": "https://beta.character.ai/",
-      "image": "./assets/media/images/characterai.png",
+      "image": "./assets/media/images/characterai_130x100.png",
       "iasTypeID": [2]
    },
    {
       "id": 16,
       "nombre": "Copy Creator",
       "link": "https://copycreator.com/",
-      "image": "./assets/media/images/copycreator.png",
+      "image": "./assets/media/images/copycreator_130x100.png",
       "iasTypeID": [{}]
    },
    {
       "id": 17,
       "nombre": "DoNotPay",
       "link": "https://donotpay.com/",
-      "image": "./assets/media/images/donotpay.png",
+      "image": "./assets/media/images/donotpay_130x100.png",
       "iasTypeID": [2,4]
    },
    
@@ -123,70 +123,70 @@
       "id": 18,
       "nombre": "Flair",
       "link": "https://withflair.ai./",
-      "image": "./assets/media/images/flair.webp",
+      "image": "./assets/media/images/flair_130x100.png",
       "iasTypeID": [3]
    },
    {
       "id": 19,
       "nombre": "Interior AI site",
       "link": "https://interiorai.com/",
-      "image": "./assets/media/images/interiorai.webp",
+      "image": "./assets/media/images/interiorai_130x100.png",
       "iasTypeID": [3]
    },
    {
       "id": 20,
       "nombre": "SlidesAI",
       "link": "https://www.slidesai.io/es",
-      "image": "./assets/media/images/slidesai.jpg",
+      "image": "./assets/media/images/slidesai_130x100.png",
       "iasTypeID": [4]
    },
    {
       "id": 21,
       "nombre": "Speak",
       "link": "https://www.speak.com/es/es",
-      "image": "./assets/media/images/speak.png",
+      "image": "./assets/media/images/speak_130x100.png",
       "iasTypeID": [4]
    },
    {
       "id": 22,
       "nombre": "Consensus",
       "link": "https://consensus.app/",
-      "image": "./assets/media/images/consensus.png",
+      "image": "./assets/media/images/consensus_130x100.png",
       "iasTypeID": [2]
    },
    {
       "id": 23,
       "nombre": "Stockimg",
       "link": "https://stockimg.ai/",
-      "image": "./assets/media/images/stockimgai.jpg",
+      "image": "./assets/media/images/stockimgai_130x100.png",
       "iasTypeID": [3]
    },
    {
       "id": 24,
       "nombre": "Bing Chat",
       "link": "https://www.bing.com/",
-      "image": "./assets/media/images/bingchat.png",
+      "image": "./assets/media/images/bingchat_130x100.png",
       "iasTypeID": [1,5]
    },
    {
       "id": 25,
       "nombre": "Luxer",
       "link": "https://www.luxerone.com/",
-      "image": "./assets/media/images/luxer.webp",
+      "image": "./assets/media/images/luxer_130x100.png",
       "iasTypeID": [6]
    },
    {
       "id": 26,
       "nombre": "Clickup",
       "link": "https://clickup.com/",
-      "image": "./assets/media/images/clickup.jpg",
+      "image": "./assets/media/images/clickup_130x100.png",
       "iasTypeID": [6]
    },
    {
       "id": 27,
       "nombre": "Conversica",
       "link": "https://www.conversica.com/",
-      "image": "./assets/media/images/conversica.jpg",
+      "image": "./assets/media/images/conversica_130x100.png",
       "iasTypeID": [2]
    }
 ]
