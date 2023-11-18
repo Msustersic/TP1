@@ -13,7 +13,6 @@ export function obtenerIAsList(data) {
          <img src="${item.image}" title= "${item.nombre}" alt="${item.nombre} site">
          </li>`;
       items += itemPattern;
-      console.log(item);
    });
    return items;
 };
