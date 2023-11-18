@@ -12,7 +12,7 @@ body>main{
    flex-direction: row;
    flex-wrap: wrap;
    justify-content: center;
-   gap: 10vw;
+   gap: 5vw;
    overflow: hidden;
 }
 
