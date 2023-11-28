@@ -3,28 +3,28 @@
       "id": 1,
       "nombre": "Chat GPT-4",
       "link": "https://openai.com/gpt-4",
-      "image": "./assets/media/images/chatGPT.jpg",
+      "image": "./assets/media/images/chatGPT.png",
       "iasTypeID": [2,5]
    },
    {
       "id": 2,
       "nombre": "Scenario",
       "link": "https://www.scenario.com/",
-      "image": "./assets/media/images/scenario.jpg",
+      "image": "./assets/media/images/scenario.png",
       "iasTypeID": [1]
    },
    {
       "id": 3,
       "nombre": "Magic Summaries by Sybill",
       "link": "https://www.sybill.ai/magic-summary",
-      "image": "./assets/media/images/sybill.jpg",
+      "image": "./assets/media/images/sybill.png",
       "iasTypeID": [5]
    },   
    {
       "id": 4,
       "nombre": "Copy Ai",
       "link": "https://www.copy.ai/?via=bryan-koch&gclid=CjwKCAjw6p-oBhAYEiwAgg2PglM3C4qukuNJzCK2gYMbpjJfMgiFEN0DsaTI5_hdsgLRV5ZXaz-fABoCtgoQAvD_BwE",
-      "image": "./assets/media/images/copyai.jpg",
+      "image": "./assets/media/images/copyai.png",
       "iasTypeID": [5]
    },
    {
@@ -38,28 +38,28 @@
       "id": 6,
       "nombre": "Lumen 5",
       "link": "https://lumen5.com/",
-      "image": "./assets/media/images/lumen5.webp",
+      "image": "./assets/media/images/lumen5.png",
       "iasTypeID": [6]
    },
    {
       "id": 7,
       "nombre": "Sinthesia",
       "link": "https://www.synthesia.io/",
-      "image": "./assets/media/images/synthesia.jpg",
+      "image": "./assets/media/images/synthesia.png",
       "iasTypeID": [1]
    },
    {
       "id": 8,
       "nombre": "Grammarly",
       "link": "https://www.grammarly.com/grammar-check",
-      "image": "./assets/media/images/grammarly.webp",
+      "image": "./assets/media/images/grammarly.png",
       "iasTypeID": [7]
    },
    {
       "id": 9,
       "nombre": "GPTZero",
       "link": "https://gptzero.me/",
-      "image": "./assets/media/images/gptzero.svg",
+      "image": "./assets/media/images/gptzero.png",
       "iasTypeID": [4]
    },
    {
@@ -80,21 +80,21 @@
       "id": 12,
       "nombre": "Reply",
       "link": "https://replylatam.com/",
-      "image": "./assets/media/images/reply.jpg",
+      "image": "./assets/media/images/reply.png",
       "iasTypeID": [6]
    },
    {
       "id": 13,
       "nombre": "Dall-E",
       "link": "https://openai.com/dall-e-2",
-      "image": "./assets/media/images/dall-e.webp",
+      "image": "./assets/media/images/dall-e.png",
       "iasTypeID": [1]
    },
    {
       "id": 14,
       "nombre": "InWorld",
       "link": "https://inworld.ai/",
-      "image": "./assets/media/images/inworld.jpeg",
+      "image": "./assets/media/images/inworld.png",
       "iasTypeID": [1]
    },
    {
@@ -123,21 +123,21 @@
       "id": 18,
       "nombre": "Flair",
       "link": "https://withflair.ai./",
-      "image": "./assets/media/images/flair.webp",
+      "image": "./assets/media/images/flair.png",
       "iasTypeID": [3]
    },
    {
       "id": 19,
       "nombre": "Interior AI site",
       "link": "https://interiorai.com/",
-      "image": "./assets/media/images/interiorai.webp",
+      "image": "./assets/media/images/interiorai.png",
       "iasTypeID": [3]
    },
    {
       "id": 20,
       "nombre": "SlidesAI",
       "link": "https://www.slidesai.io/es",
-      "image": "./assets/media/images/slidesai.jpg",
+      "image": "./assets/media/images/slidesai.png",
       "iasTypeID": [4]
    },
    {
@@ -158,7 +158,7 @@
       "id": 23,
       "nombre": "Stockimg",
       "link": "https://stockimg.ai/",
-      "image": "./assets/media/images/stockimgai.jpg",
+      "image": "./assets/media/images/stockimgai.png",
       "iasTypeID": [3]
    },
    {
@@ -172,21 +172,21 @@
       "id": 25,
       "nombre": "Luxer",
       "link": "https://www.luxerone.com/",
-      "image": "./assets/media/images/luxer.webp",
+      "image": "./assets/media/images/luxer.png",
       "iasTypeID": [6]
    },
    {
       "id": 26,
       "nombre": "Clickup",
       "link": "https://clickup.com/",
-      "image": "./assets/media/images/clickup.jpg",
+      "image": "./assets/media/images/clickup.png",
       "iasTypeID": [6]
    },
    {
       "id": 27,
       "nombre": "Conversica",
       "link": "https://www.conversica.com/",
-      "image": "./assets/media/images/conversica.jpg",
+      "image": "./assets/media/images/conversica.png",
       "iasTypeID": [2]
    }
 ]
