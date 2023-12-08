@@ -11,11 +11,11 @@
   <meta name="author" content="Valentín, Matías, Julián, Mario">
 
   <link rel="stylesheet" href="../../assets/css/styles.css" />
+  <link rel="stylesheet" href="../../assets/css/ia.css" />
 </head>
 
 <body>
   <header id="headerPri">
-
     <a id="logoSitio" href="https://net-m.myddns.me">
       <img src="../../assets/media/icons/logo_g19.png" width="55" height="55" alt="Logo del Portfolio - Grupo-19"
         title="Grupo-19" />
@@ -24,42 +24,93 @@
     <nav id="menuPri">
       <ul>
         <li><a href="../../index.html">inicio</a></li>
-        <!-- <li><a href="../searchIA.html">searchIA</a></li> -->
-        <li><a href="../byFunction.html">byFunction</a></li>
-        <li><a href="../comments.html">comments</a></li>
+        <li><a href="../byFunction.html">Funcion</a></li>
+        <li><a href="../comments.html">Comentarios</a></li>
         <li><a href="./fLogin.html"><i class="bi bi-person-circle"></i></a></li>
       </ul>
     </nav>
-
     <button id="btnMenuPri" type="button"></button>
-
   </header>
 
   <main>
     <form id="fLogin" action="" method="post" enctype="text/plain">
-			<fieldset>
-				<legend>Abrir Portfolio para edición</legend>
-				<label for="inputUsernameID">Nombre de Usuario</label>
-				<input type="text" name="username" id="inputUsernameID" size="25" minlength="3" maxlength="30" pattern="/\d+$/g" placeholder="Ingrese su nombre de usuario" required />
-				<!-- aria-placeholder="" value="Pepe None"  -->
-				<p></p> <!-- Mensaje de error a manejar con JS -->
-				
-				<!-- 
-				<label for="email">input type="email"</label>
-				<input type="email" name="email" id="#" size="50" minlength="8" maxlength="50"
-					pattern="/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/g" placeholder="Ingrese su cuenta de email" />
-				 -->
-					<!-- value="micuenta@midominio.com"  -->
-				<!--<p></p> Mensaje de error a manejar con JS -->
-				
-				<label for="inputClaveID">Contraseña</label>
-				<input type="password" name="password" id="inputClaveID" size="25" minlength="8" maxlength="12" pattern="/\d+$/g"
-					placeholder="Ingrese su clave" />
-				<p></p> <!-- Mensaje de error a manejar con JS -->
-			</fieldset>
-			
-			<button id="btnLogin" name="btnLogin" type="submit">Login</button>
-		</form>
+      <fieldset>
+
+        <legend>Cargado de IA</legend>
+
+        <label for="inputUsernameID">Nombre de IA</label>
+        <input type="text" name="username" id="inputUsernameID" size="25" minlength="1" maxlength="40" 
+          placeholder="Ingrese el nombre de la IA" required />
+        <p></p> <!-- Mensaje de error a manejar con JS -->
+
+        <label for="inputImageID">Imagen de IA</label>
+        <input type="text" name="image" id="inputImageID" size="25" minlength="8"
+          placeholder="Ingrese la URL de la imagen" required />
+        <p></p> <!-- Mensaje de error a manejar con JS -->
+
+        <label for="inputLinkID">Link de IA</label>
+        <input type="text" name="link" id="inputLinkID" size="25" minlength="4"
+          placeholder="Ingrese el link de la pagina" required />
+        <p></p> <!-- Mensaje de error a manejar con JS -->
+
+        <label for="selectFunction">Funciones de IA</label>
+        <select name="function" id="selectFunction" class="selectFunction" required>
+        <option value="" disabled selected>Seleccione la función de la IA</option>
+        <option value="Arte & Creatividad">1-Arte & Creatividad</option>
+        <option value="Conversasionales">2-Conversasionales</option>
+        <option value="Diseño">3-Diseño</option>
+        <option value="Educación">4-Educación</option>
+        <option value="Programación">5-Programación</option>
+        <option value="Automatización">6-Automatización</option>
+        <option value="Texto y Traducción">7-Texto y Traducción</option>
+        </select>
+        <p></p> <!-- Mensaje de error a manejar con JS -->
+
+      </fieldset>
+
+      <button id="btnLogin" name="btnLogin" type="submit">Cargar IA</button>
+    </form>
+
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        console.log('DOMContentLoaded event fired');
+      document.getElementById('fLogin').addEventListener('submit', function (event) {
+        event.preventDefault();
+
+        var nombreIA = document.getElementById('inputUsernameID').value;
+        var imagenIA = document.getElementById('inputImageID').value;
+        var linkIA = document.getElementById('inputLinkID').value;
+        var funcionIA = document.getElementById('selectFunction').value;
+
+        var nuevaIA = {
+        "nombre": nombreIA,
+        "link": linkIA,
+        "image": imagenIA,
+        "iasTypeID": [1]
+        };
+
+        fetch('../forms/ias.json', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(nuevaIA)
+      })  
+          .then(response => {
+            if (!response.ok) {
+              throw new Error('Network response was not ok');
+            }
+            return response.json();
+          })
+          .then(data => {
+            alert("Se guardo la nueva IA");
+            window.location.href = "https://msustersic.github.io/TP1/index.html";
+          })
+          .catch(error => {
+            console.error('Error during fetch:', error);
+          });
+      });
+    });
+    </script>
+    
   </main>
 
   <footer>
